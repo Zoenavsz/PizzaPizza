@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzería DEV.F</title>
+</head>
+<body>
+    <body style="background-color:rgb(215, 144, 97);"></body>
+    <hr>
+    <hr>
+    <img 
+    src="https://thumbs.dreamstime.com/z/borde-sin-soldadura-de-mano-pizza-pizzas-con-ingredientes-y-suministros-extra%C3%ADdos-fisuras-doodles-comida-fondo-marr%C3%B3n-192356439.jpg?w=992"
+    alt="Fondo Pizzería"
+    width="600px"
+    >
+    <hr>
+    <hr>
+    <h1 style="font-size:40px;color: #bf5200;">Ordena tu pizza</h1>
+
+    <div>
+        <div>
+        </div>
+    </div>
+    <form>
+        <label for="name"> Nombre: </label>
+        <input name="name" type="text" placeholder="Ingresa tu nombre"style="background-color: #eec3a2;" required/>
+        <label for="name"> Apellidos: </label>
+        <input name="name" type="text" placeholder="Ingresa tus apellidos"style="background-color: #eec3a2;" required/>
+
+    <br>
+    <br>
+        <label for="email"> Ingresa tu email: </label>
+        <input name="email" type="email" placeholder="Ingresa tu correo electrónico" style="background-color: #eec3a2;" required/>
+    <br>
+    <br>
+    <fieldset>
+        <label for="address"> Complete su dirección de entrega: </label>  
+        <br>  
+        <br>
+        <label for="number"> Código postal: </label> 
+        <input name="number" type="text" placeholder="Código postal" style="background-color: #eec3a2;" required/> 
+        <br>
+        <label for="text"> Calle y número: </label> 
+        <input name="text" type="text" placeholder="Calle y número exterior-int"style="background-color: #eec3a2;" required/>  
+        <br>
+        <label for="text"> Colonia/Fracc: </label> 
+        <input name="text" type="text" placeholder="Colonia o fraccionamiento"style="background-color: #eec3a2;" required/>  
+        <br>
+        <label for="text"> Municipio: </label> 
+        <input name="text" type="text" placeholder="Municipio o delegación"style="background-color: #eec3a2;" required/>  
+    </fieldset>
+         <br>
+    <label for="delivery-day">Seleccione un día de entrega y un horario:</label><br>
+    <br>
+    <fieldset>
+        <legend>Hoy</legend>
+        <input type="radio" name="delivery-time" value="Lo más pronto posible (40min)" id="hoy-40min">
+        <label for="hoy-40min">Lo más pronto posible (40min)</label><br>
+        <input type="radio" name="delivery-time" value="hoy-12-1pm" id="hoy-12-1pm" required>
+        <label for="hoy-12-1pm">12:00 PM - 1:00 PM</label><br>
+        <input type="radio" name="delivery-time" value="hoy-3-4pm" id="hoy-3-4pm">
+        <label for="hoy-3-4pm">3:00 PM - 4:00 PM</label><br>
+        <input type="radio" name="delivery-time" value="hoy-6-7pm" id="hoy-6-7pm">
+        <label for="hoy-6-7pm">6:00 PM - 7:00 PM</label><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Mañana</legend>
+        <input type="radio" name="delivery-time" value="mañana-8-9am" id="mañana-8-9am">
+        <label for="mañana-8-9am">8:00 AM - 9:00 AM</label><br>
+        <input type="radio" name="delivery-time" value="mañana-10-11am" id="mañana-10-11am">
+        <label for="mañana-10-11am">10:00 AM - 11:00 AM</label><br>
+        <input type="radio" name="delivery-time" value="mañana-5-6pm" id="mañana-5-6pm">
+        <label for="mañana-5-6pm">5:00 PM - 6:00 PM</label><br>
+    </fieldset>
+<br>
+<br>
+    <label for="pizza-type">Tipo de pizza:</label>
+    <select name="pizza-type" id="pizza-type" required>
+        <option value="napolitana">Pizza Napolitana</option>
+        <option value="pepperoni">Pizza de Pepperoni</option>
+        <option value="vegana">Pizza Vegana</option>
+        <option value="4-quesos">Pizza de 4 quesos</option>
+    </select>
+
+    <button type="submit">Enviar Pedido</button>
+    </form>
+</body>
+</html>
